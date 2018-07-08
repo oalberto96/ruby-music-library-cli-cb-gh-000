@@ -62,8 +62,8 @@ class MusicLibraryController
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     genres = order_songs_by_class(Genre)
-    if genres 
-      artist.songs.each_with_index{|song, index| puts "#{index+1}. #{song.artist.name} - #{song.name}"}
+    if genres
+      genres.songs.each_with_index{|song, index| puts "#{index+1}. #{song.artist.name} - #{song.name}"}
     end
   end
 end
