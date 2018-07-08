@@ -55,7 +55,6 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     artist = order_songs_by_class(Artist)
     if artist
-      artist.songs.sort_by!{|song| song.name}
       artist.songs.each_with_index{|song, index| puts "#{index+1}. #{song.name} - #{song.genre.name}"}
     end
   end
