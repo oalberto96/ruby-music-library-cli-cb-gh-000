@@ -66,4 +66,8 @@ class MusicLibraryController
       genre.songs.each_with_index{|song, index| puts "#{index+1}. #{song.artist.name} - #{song.name}"}
     end
   end
+
+  def play_song
+    
+  end
 end
