@@ -46,6 +46,6 @@ class MusicLibraryController
     artist_name = gets
     artist = Artist.find_by_name(artist_name)
     artist.songs.sort_by!{|song| song.artist.name}
-    print_songs
+    artist.songs.each{|song| puts "#{song.name}"}
   end
 end
