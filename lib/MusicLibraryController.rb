@@ -73,7 +73,6 @@ class MusicLibraryController
     song = Song.all[input.to_i + 1]
     if song
       puts "Playing #{song.name} by #{song.artist.name}"
-      binding.pry
     end
   end
 end
