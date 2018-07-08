@@ -42,7 +42,7 @@ class MusicLibraryController
   end
 
 
-  def list_songs_by_class(class_name)
+  def order_songs_by_class(class_name)
     instance_name = gets
     instance = class_name.find_by_name(instance_name)
     if instance
