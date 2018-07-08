@@ -41,6 +41,10 @@ class MusicLibraryController
     genres.each_with_index{|genre, index| puts "#{index + 1}. #{genre.name}"}
   end
 
+  def list_songs_by_class()
+    
+  end
+
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist_name = gets
@@ -49,5 +53,9 @@ class MusicLibraryController
       artist.songs.sort_by!{|song| song.name}
       artist.songs.each_with_index{|song, index| puts "#{index+1}. #{song.name} - #{song.genre.name}"}
     end
+  end
+
+  def list_songs_by_genre
+    
   end
 end
