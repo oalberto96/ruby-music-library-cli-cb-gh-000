@@ -50,6 +50,7 @@ class MusicLibraryController
       if class_name == Artist
         instance.songs.each_with_index{|song, index| puts "#{index+1}. #{song.name} - #{class_name == Artist ? song.artist.name : song.genre.name}"}
     end
+    instance
   end
 
   def list_songs_by_artist
