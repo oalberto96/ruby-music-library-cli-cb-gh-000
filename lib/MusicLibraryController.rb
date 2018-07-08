@@ -47,8 +47,6 @@ class MusicLibraryController
     instance = class_name.find_by_name(instance_name)
     if instance
       instance.songs.sort_by!{|song| song.name}
-      if class_name == Artist
-        instance.songs.each_with_index{|song, index| puts "#{index+1}. #{song.name} - #{class_name == Artist ? song.artist.name : song.genre.name}"}
     end
     instance
   end
