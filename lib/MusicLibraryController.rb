@@ -42,7 +42,6 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    Song.all.sort_by!{|song| song.artist.name}
-    print_songs
+
   end
 end
